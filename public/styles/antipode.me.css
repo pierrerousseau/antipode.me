@@ -1,0 +1,8 @@
+input {
+    padding: .5em;
+}
+
+.map iframe {
+    width: 100%;
+    height: 600px;
+}

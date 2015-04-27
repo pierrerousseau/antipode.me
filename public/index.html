@@ -1,0 +1,48 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title> antipode.me </title>
+
+        <link rel="icon" href="favicon.ico" />
+        <link rel="stylesheet" href="styles/knacss.css">
+        <link rel="stylesheet" href="styles/antipode.me.css">
+
+    </head>
+
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">
+                You are using an <strong>outdated</strong> browser. 
+                Please 
+                <a href="http://browsehappy.com/">upgrade your browser</a> 
+                to improve your experience.
+            </p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div class="content">
+            <form class="txtcenter ptm">
+                <input type="text" name="latitude" placeholder="latitude" />
+                <input type="text" name="longitude" placeholder="longitude" />
+                <input type="submit" value="Check!" />
+            </form>
+            <div class="map txtcenter ptm">
+                <iframe 
+                    frameborder="0" 
+                    scrolling="no" 
+                    marginheight="0" 
+                    marginwidth="0" 
+                    src="http://www.openstreetmap.org/export/embed.html?bbox=-100%2C-25%2C100%2C25&amp;layer=mapnik&amp;marker=0%2C0">
+                </iframe>
+            </div>
+        </div>
+
+        <script src="scripts/jquery.js"></script>
+        <script src="scripts/antipode.me.js"></script>
+    </body>
+
+</html>
