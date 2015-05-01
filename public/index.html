@@ -9,6 +9,7 @@
 
         <link rel="icon" href="favicon.ico" />
         <link rel="stylesheet" href="styles/knacss.css">
+        <link rel="stylesheet" href="styles/ol.css">
         <link rel="stylesheet" href="styles/antipode.me.css">
 
     </head>
@@ -29,19 +30,17 @@
                 <input type="text" name="latitude" placeholder="latitude" />
                 <input type="text" name="longitude" placeholder="longitude" />
                 <input type="submit" value="Check!" />
+                <div id="geo-error" class="txtcenter error"></div>
             </form>
-            <div class="map txtcenter ptm">
-                <iframe 
-                    frameborder="0" 
-                    scrolling="no" 
-                    marginheight="0" 
-                    marginwidth="0" 
-                    src="http://www.openstreetmap.org/export/embed.html?bbox=-100%2C-25%2C100%2C25&amp;layer=mapnik&amp;marker=0%2C0">
-                </iframe>
+            <div id="map" class="map txtcenter ptm"></div>
+            <div class="hidden markers">
+                <img id="you" src="images/marker-you.png" alt="you" />
+                <img id="antipode" src="images/marker-antipode.png" alt="antipode" />
             </div>
         </div>
 
         <script src="scripts/jquery.js"></script>
+        <script src="scripts/ol.js"></script>
         <script src="scripts/antipode.me.js"></script>
     </body>
 
